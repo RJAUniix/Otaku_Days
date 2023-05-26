@@ -1,0 +1,152 @@
+body {
+    background-color: rgb(22, 21, 21);
+}
+
+div {
+    width: 70%;
+    margin: 5% auto;
+}
+
+button {
+    padding: 10px;
+    width: 150px;
+    border: none;
+    background-color: rgb(124, 6, 6);
+    border-radius: 10px;
+    color: white;
+    opacity: 70%;
+}
+
+button:hover {
+    background-color: rgb(255, 253, 253);
+    box-shadow: 0 0 20px rgb(214, 4, 4);
+    color: black;
+    opacity: 100%;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 5%;
+    justify-content: space-between;
+}
+
+input {
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+    opacity: 70%;
+}
+
+input::placeholder {
+    color: black;
+}
+
+input:focus, image:hover, image:active {
+    opacity: 100%;
+}
+/* Pour styliser les tableau */
+thead,
+tfoot {
+color: white;
+text-shadow: 1px 1px 1px black;
+}
+
+thead th,
+tfoot th,
+tfoot td {
+color: black;
+border-top: 1px solid black;
+}
+/* Font */
+/* html {
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+} */
+
+/* thead th,
+tfoot th {
+/* font-family: "Rock Salt", cursive; 
+} */
+
+th {
+letter-spacing: 2px;
+}
+
+td {
+letter-spacing: 1px;
+}
+
+tbody td {
+text-align: center;
+}
+
+tfoot th {
+text-align: right;
+}
+
+/* Le style zebré */
+
+tbody tr:nth-child(odd) {
+    background-color: #cecaca;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tbody tr:nth-child(even):hover, tbody tr:nth-child(odd):hover {    
+    background-color: #178538;
+    color: white;
+}
+
+table {
+    background-color: #ffffff;
+    table-layout: fixed;
+}
+
+/* caption */
+
+caption {
+    padding: 0.3em;
+    font-style: italic;
+    color: rgb(241, 240, 240);
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+/* spacing */
+table {
+table-layout: fixed;
+width: 100%;
+border-collapse: collapse;
+border-radius: 10px;
+}
+
+thead th:nth-child(1) {
+width: 5%;
+}
+
+thead th:nth-child(2) {
+width: 20%;
+}
+
+thead th:nth-child(3) {
+width: 70%;
+}
+
+thead th:nth-child(4) {
+width: 10%;
+}
+
+th,
+td {
+padding: 20px;
+}
+
+tbody th:nth-child(1) {
+    text-align: left;
+}
