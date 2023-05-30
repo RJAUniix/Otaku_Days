@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mar. 30 mai 2023 à 06:53
+-- Généré le : mar. 30 mai 2023 à 07:25
 -- Version du serveur :  8.0.21
 -- Version de PHP : 7.3.21
 
@@ -35,27 +35,16 @@ CREATE TABLE IF NOT EXISTS `participants` (
   `pseudo` varchar(20) NOT NULL,
   `score` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=42 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=45 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `participants`
 --
 
 INSERT INTO `participants` (`id`, `nom`, `prenom`, `pseudo`, `score`) VALUES
-(37, 'RABE', 'Andréas', 'Andréas', 9),
-(38, 'RABESON', 'Johanne Andréas', 'andreas', 10),
-(36, 'RABESON', 'Johanne Andréas', 'Andréas', 1),
-(35, 'RABESON', 'Johanne Andréas', 'gy', 1),
-(34, 'RABESON ', 'Jovial Ritch', 'Andréas', 0),
-(33, 'RABESON ', 'Jovial Ritch', 'Andréas', 0),
-(32, 'RABESON', 'Johanne Andréas', 'andreass', 1),
-(31, 'RABESON', 'Johanne Andréas', 'andreass', 1),
-(30, 'RABESON', 'Jovial Ritchi', 'sdfdsf', 6),
-(29, 'RABESON', 'Johanne Andréas', 'sdf', 0),
-(28, 'RABESON', 'Johanne Andréas', 'andreas', 0),
-(39, 'jhj', 'hjkh', 'giu', 0),
-(40, 'RABESON', 'Jovial Ritchi', 'Andréas', 0),
-(41, 'RABESON ', 'Johanne Andréas', 'Andréas', 1);
+(44, 'RABESON', 'Jovial Ritchi', 'Ritchi', 2),
+(43, 'RABESON ', 'Johanne Andréas', 'Andréas', 2),
+(42, 'RABESON  yuguyguyuyk', 'Johanne ', 'goma', 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

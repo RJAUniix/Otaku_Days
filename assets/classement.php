@@ -11,7 +11,13 @@
     <div>
         <div class="navigation">
             <a href="../index.html"><button>Quitter</button></a>
-            <input type="text" placeholder="Rechercher ici...">
+            <form action="classement.php" method="POST">
+                <input type="search" 
+                    placeholder="Rechercher ici"
+                    autocomplete="off"
+                    name="recherche">
+                <button type="submit">Rechercher</button>
+            </form>
         </div>
         <table class="table">
             <caption>CLASSEMENT DES MEILLEURS JOUEURS</caption>
@@ -26,8 +32,18 @@
             <tbody>
                 <?php
                 include ('config.inc.php');
-                $requete = "SELECT *FROM participants ORDER BY score DESC";
-                $resultat = mysqli_query($connexion,$requete);
+
+                // Pour tester toutes les valeurs si il y a une correspondance avec la zone de recherche
+                if (isset($_POST['recherche']) && $_POST['recherche']!=''){
+                    $requete = "SELECT *FROM participants WHERE CONCAT(nom,prenom,pseudo,score) like'%".$_POST['recherche']."%' ORDER BY score DESC";
+                    $resultat = mysqli_query($connexion,$requete);
+                    
+                }
+                else {
+                    $requete = "SELECT *FROM participants ORDER BY score DESC";
+                    $resultat = mysqli_query($connexion,$requete);
+                }
+
                 $i=1;
                 while ($liste = mysqli_fetch_object($resultat)){ ?>
                         <tr>
@@ -39,6 +55,7 @@
                     <?php
                     $i++;
                 } 
+                
                 ?>
             </tbody>
         </table>
