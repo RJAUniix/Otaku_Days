@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Police */
+
+@font-face {
+    font-family: 'manga';
+    src: url('font/manga-webfont.woff2') format('woff2'),
+         url('font/manga-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+
+body {
+    background-color: rgb(22, 21, 21);
+    font-family: "Poppins", sans-serif;
+    background: #011d29;
+    font-size: 18px;
+}
+
+div {
+    width: 70%;
+    margin: 5% auto;
+}
+
+#quit {
+    padding: 10px;
+    width: 100px;
+    font-size: 18px;
+    border: none;
+    background-color: #ee0808;
+    border-radius: 10px;
+    color: white;
+}
+
+#quit:hover{
+    background: white;
+    border: 3px solid red;
+    padding: 7px;
+    color: rgb(0, 0, 0);
+}
+
+#play {
+    padding: 10px;
+    width: 100px;
+    font-size: 18px;
+    border: none;
+    background-color: #029aff;
+    border-radius: 10px;
+    color: white;
+}
+
+#play:hover{
+    background: white;
+    border: 3px solid #029aff;
+    padding: 7px;
+    color: rgb(0, 0, 0);
+}
+
+#formulaire {
+    padding-left: 150px;
+}
+
+#search-btn {
+    background-color: #ffa600;
+    width: auto;
+    padding: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#search-btn:hover {
+    background: white;
+    border: 3px solid rgb(255, 145, 0);
+    padding: 9px;
+}
+
+.navigation {
+    margin: -2em 1em 0.5em 1em;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 5%;
+    justify-content: space-between;
+}
+
+#recherche {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: black;
+}
+/* Pour styliser les tableau */
+thead{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+thead th,
+tfoot th,
+tfoot td {
+color: black;
+border-top: 1px solid black;
+}
+
+th {
+letter-spacing: 1px;
+}
+
+td {
+letter-spacing: 1px;
+}
+
+tbody td {
+text-align: center;
+}
+
+tfoot th {
+text-align: right;
+}
+
+/* Le style zebré */
+
+tbody tr:nth-child(odd) {
+    background-color: #ebe7e7;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tbody tr:nth-child(even):hover, tbody tr:nth-child(odd):hover {    
+    background-color: rgb(29, 25, 1);
+    color: white;
+}
+
+table {
+    background-color: #ffffff;
+    table-layout: fixed;
+}
+
+/* caption */
+
+h1 {
+    background-color: rgba(0, 0, 0, 0.459);
+    color: gold;
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: "manga";
+    font-size: 45px;
+    width: 100%;
+    letter-spacing: 4px;
+}
+
+/* Resultat de recherche */
+#recherche_result {
+    color: white;
+}
+
+/* spacing */
+table {
+table-layout: fixed;
+width: 100%;
+border-collapse: collapse;
+border-radius: 10px;
+}
+
+thead th:nth-child(1) {
+width: 2%;
+}
+
+thead th:nth-child(2) {
+width: 20%;
+}
+
+thead th:nth-child(3) {
+width: 70%;
+}
+
+thead th:nth-child(4) {
+width: 13%;
+}
+
+th,
+td {
+padding: 20px;
+}
+
+tbody th:nth-child(1) {
+    text-align: left;
+}
+
+
+/* Les stickers */
+#sticker1{
+    width: 200px;
+    position: fixed;
+    top: 120px;
+    left: 10px;
+}
+#sticker2{
+    width: 200px;
+    position: fixed;
+    top: 120px;
+    right: 10px;
+}
+#sticker3{
+    width: 200px;
+    position:static;
+    bottom: 0px;
+    margin-left: 5%;
+}
+#sticker4{
+    width: 200px;
+    position: static;
+    bottom: 0px;
+    margin-left: 20%;
+}
+#sticker5{
+    width: 200px;
+    position:static;
+    bottom: 0px;
+    margin-left: 25%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTAKU QUIZ | Quiz</title>
+    <link rel="icon" href="Medias/icons/star.svg"/>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body onload="initial()">
+    <div id="quiz-div">
+        <img id="sticker1" src="Medias/illustrations/dbz2.webp" alt="stickers">
+        <img id="sticker2" src="Medias/illustrations/jujutsu.webp" alt="stickers">
+        <div id="display-container">
+            <div class="header">
+                <div class="number-of-count">
+                    <span class="number-of-question">1 questions sur 3</span>
+                </div>
+                <div class="timer-div">
+                    <img src="Medias/icons/clock.svg"
+                        width="20px" />
+                    <span class="time-left">10s</span>
+                </div>
+            </div>
+
+            <div id="container">
+                <!-- Les questions vonts êtres affichées ici -->
+            </div>
+            <hr>
+
+            <button id="next-button">Suivant</button>
+        </div>
+
+        <div class="score-container hide">
+            <div id="user-score">Score</div>
+            <a href="quiz.html"><button id="restart">RECOMMENCER</button></a>
+            <a href="classement.php"><button id="stop">VOIR LES SCORES</button></a>
+        </div>
+        <img id="sticker3" src="Medias/illustrations/naruto0.webp" alt="stickers">
+        <img id="sticker4" src="Medias/illustrations/kimetsu.webp" alt="stickers">
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

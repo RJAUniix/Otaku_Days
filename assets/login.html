@@ -1,0 +1,58 @@
+<!Doctype html>
+<html lang="fr">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>OTAKU QUIZ | Login</title>
+        <link rel="icon" href="Medias/icons/star.svg"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!-- <div class="video-container">
+            <video src="assets/Medias/DM.mp4" controls autoplay loop class="left"></video>
+        </div> -->
+
+        <div>
+            <div class="login-screen">
+                <form action="enregister.php" method="POST">
+                    <h1>HIRASHAIMASE</h1>
+                    <img src="Medias/eren.png" class="pics"> 
+                    <input type="text" placeholder="Entrer votre nom" class="hehe" name="nom" required>
+                    <input type="text" placeholder="Entrer votre prénom" class="hehe" name="prenom">
+                    <input type="text" placeholder="Entrer votre pseudo" class="hehe" name="pseudo" id="nom" required>
+                    <input type="submit" value="Enregister" id="logbut" onclick="enregistrerNom()" required>
+                </form>
+            </div>
+            <div id="display-container" class="hide">
+                <div class="header">
+                    <div class="number-of-count">
+                        <span class="number-of-question">1 questions sur 3</span>
+                    </div>
+                    <div class="timer-div">
+                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/stopwatch-icon.png"
+                            width="20px" />
+                        <span class="time-left">10s</span>
+                    </div>
+                </div>
+                <div id="container" class="hide">
+                    <!-- questions and options will be displayed here -->
+                </div>
+                <button id="next-button">Suivant</button>
+            </div>
+            <!-- <div class="score-container hide">
+                <div id="user-score">Score</div>
+                <a href="login.html"><button id="restart">RECOMMENCER</button></a>
+                <a href="score.php"><button id="stop">TERMINER</button></a>
+            </div> -->
+        </div>
+
+        <div class=" ranking"></div>
+
+        <!-- <script src="script.js"></script> -->
+    </body>
+</html> 
